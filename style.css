@@ -1,0 +1,66 @@
+body{
+    background-color:#Afdde5;
+    color:#003135;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size:16px;
+}
+nav{
+    background-color:#024950;
+    height:75px;;
+    display:flex;
+    color:#Afdde5;
+    display:relative;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+}
+nav p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.contact{
+    cursor:pointer;
+}
+section{
+    margin: 0 20px;
+}
+.aboutme{
+    margin:0 20px;
+}
+.aboutme-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+}
+.aboutme-content p{
+    margin-right:20px;
+}
+.profile-picture{
+    width:300px;
+    border-radius:0.7em;
+}
+.projects{
+    
+    border-radius:0.7em;
+    margin:20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+
+}
+.project{
+    background-color:#964734;
+    width:300px;
+    margin:10px;
+    text-align: center;
+    color:white;
+    border-radius:0.7em;
+    
+}
