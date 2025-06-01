@@ -9,10 +9,9 @@ body{
 }
 nav{
     background-color:#024950;
-    height:75px;;
+    height:75px;
     display:flex;
     color:#Afdde5;
-    display:relative;
     align-items:center;
     justify-content:space-between;
     padding:0 20px;
@@ -20,6 +19,23 @@ nav{
 nav p{
     font-size: 1.5em;
     font-weight: bold;
+}
+header{
+    margin:auto;
+    background-image: linear-gradient(rgba(150, 71, 52, 0.3), rgba(150, 71, 52, 0.3)), url('./resources/lukas-hadrich-wCLCK9LDDjI-unsplash.jpg');
+    background-size:cover;
+    height:100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+header h1{
+    color:#Afdde5;
+    font-size:4em;
+
 }
 .contact{
     cursor:pointer;
