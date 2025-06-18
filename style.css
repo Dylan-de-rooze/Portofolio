@@ -1,5 +1,6 @@
+
 body{
-    background-color:#Afdde5;
+    background-color:whitesmoke;
     color:#003135;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,6 +16,8 @@ nav{
     align-items:center;
     justify-content:space-between;
     padding:0 20px;
+    position:sticky;
+    top:0;
 }
 nav p{
     font-size: 1.5em;
@@ -24,7 +27,7 @@ header{
     margin:auto;
     background-image: linear-gradient(rgba(150, 71, 52, 0.3), rgba(150, 71, 52, 0.3)), url('./resources/lukas-hadrich-wCLCK9LDDjI-unsplash.jpg');
     background-size:cover;
-    height:100vh;
+    height:90vh;
     background-position: center;
     background-repeat: no-repeat;
     display:flex;
@@ -35,10 +38,15 @@ header{
 header h1{
     color:#Afdde5;
     font-size:4em;
+    text-align: center;
 
 }
 .contact{
-    cursor:pointer;
+    cursor:pointer    
+}
+.contact a{
+    text-decoration:none;
+    color:#Afdde5;
 }
 section{
     margin: 0 20px;
@@ -79,4 +87,39 @@ section{
     color:white;
     border-radius:0.7em;
     
+}
+#popup{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #964734;
+    color: whitesmoke;
+    width: 80%;
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    visibility: hidden;
+}
+.close{
+    cursor: pointer;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+input, textarea{
+    border-radius: 0.5em;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+textarea{
+    height: 100px;
 }

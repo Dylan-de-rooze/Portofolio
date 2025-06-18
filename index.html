@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" >
+    
     <title>Dylan De Rooze</title>
 </head>
 <body>
     <nav>
         <p class="name">Dylan De Rooze</p>
-        <p class="contact">Contact</p>
+        <p class="contact"><a href="#contact-form">Contact</a></p>
     </nav>
     <header>
         <h1>Dylan's portofolio</h1>
@@ -48,5 +50,19 @@
             </div>
         </section>
     </main>
+    <div id="popup" class="popup" >
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Contact Form</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
 </body>
 </html>
